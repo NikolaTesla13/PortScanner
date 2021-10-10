@@ -43,7 +43,7 @@ def main():
             print("socket creation failed with error %s" % (err))
             sys.exit()
 
-    for port in range(2998, 3004):
+    for port in range(1, 1000):
         try:
             threading.Thread(target=check_port, args=(target, port)).start()
         except:
